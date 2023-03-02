@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+    <h1 id="score"></h1>
+    <div id="examPage" class="examPage">
+        <center><img id="logo" src="cbt-logo.png" alt="logo"></center>
+        <div class="endPage">
+            <center><h1 id="remark1"></h1>
+                <h1 id="remark2"></h1>
+            <h2 id="userScore"></h2></center>
+
+        </div>
+        <div class="startPage">
+            <div class="btnStart">
+                <input type="text" name="userName" id="userName" placeholder="enter your name" value=""><br>
+                <p id="error">  UserName Cannot be too Short</p>
+                <button id="startQuiz">Start Quiz</button>
+            </div>
+            <div id="instructions">
+                <p id="pta">1. You will have only <span>3 Minutes</span> to answer all question. <br>
+                            2. The previous button is dissabled for now, so your answer cant be changed when u move to d next page <br>
+                            3. The exam automatically submit once time goes off. <br>
+                            4. You can't exit from the Quiz while you're playing. <br>
+                            5. You'll get points on the basis of your correct answers.</p>
+                <div style="display: flex;"> 
+                    <button id="exitIns">exit</button>
+                    <button id="insBtn">continue</button>
+                </div>
+        
+            </div>
+        </div>
+        <div id="timeBox" class="timeBox">
+            <div id="timer"></div>
+            <div id="timer2"></div>
+        </div>
+        <div id="questPage" class="questPage">
+            <div id="questions">
+    
+            </div>
+            <div id="questOption">
+    
+            </div>
+            <div id="btnNext" class="navig-btn" style="display: flex;">
+                <button id="previous" sabled>Previous</button>
+                <button id="next">Next</button>
+                <button id="submit">SUBMIT</button>
+            </div>
+        </div>
+        <div class="footer">
+            <center><p>CBT App By <span>Otunba Odubanjo</span></p></center>
+        </div>
+    </div>
+
+    <script src="exam.js"></script>
+</body>
+</html>

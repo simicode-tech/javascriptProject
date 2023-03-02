@@ -1,0 +1,160 @@
+body{
+    background: #007bff;
+}
+
+/* .questPage{
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+} */
+@media screen and (max-width: 992px) {
+    .examPage{
+        width: 89% !important;
+    }
+}
+#remark1{
+    color:green;
+}
+#remark2{
+    color:red;
+}
+#timer{
+    /* color: #007bff; */
+    margin-top: -30px;
+    font-weight:bolder;
+    font-size:20px;
+    margin-left: 100px;
+}
+#error{
+    color: red;
+    font-weight:bold;
+}
+#exitIns{
+    margin-right:25px;
+}
+.examPage .timeBox{
+    /* background-color: green; */
+    border-color: darkslategray;
+    border-style:solid;
+    border-top:none;
+    border-right: none;
+    display: flex;
+    border-left: none;
+    /* height: 1px; */
+}
+.timeBox{
+    display: flex;
+}
+#logo{
+    height: 90px;
+    border-color: darkslategray;
+    border-style:solid;
+    border-radius:50%;
+    margin-top: 20px;
+}
+.examPage{
+    /* height: 200px; */
+    text-orientation: sideways-right;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 1;
+    /* pointer-events: none; */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+#questions{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.questPage{
+    padding: 25px 30px 20px 30px;
+    text-align:start ;
+}
+.startPage{
+    padding: 25px 30px 20px 30px;
+}
+.btnStart{
+    text-align: center;
+}
+.startPage input{
+    margin-bottom: 30px;
+    border-width: 2px;
+    border-top: none;
+    border-left: none;
+    border-radius: 15px;
+    font-size: large;
+    height: 30px;
+    box-shadow: 0 4px 8px gray;
+}
+.startPage button{
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 210px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.navig-btn button{
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 25px;
+    width: 210px;
+    font-weight:bolder;
+    font-size: larger;
+}
+#questOption{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.footer{
+    border-color: gray;
+    border-width: 1;
+    border-style:solid;
+    border-bottom:none;
+    border-right: none;
+    border-left: none;
+}
+.footer p{
+    color: green;
+    font-weight: bolder;
+    font-size: larger;
+}
+.footer span{
+    font-weight: bold;
+    font-size:13px;
+    color:rgb(0, 128, 96);
+}
+#pta{
+    font-weight: bold;
+    font-size:large;
+}
+#pta span{
+    color:#007bff;
+}
+#timer2{
+    padding:10px;
+    border-radius:10px;
+    width: 50px;
+    margin-left: 85%;
+    font-size: 20px;
+    font-weight:bolder;
+    color:white;
+    background: black;
+    margin-top: -30px;
+}
