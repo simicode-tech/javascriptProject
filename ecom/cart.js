@@ -20,15 +20,18 @@ loadCartItems();
 updateCart
 -------------------
 */
-function updateCart() {
+function updateCart(product) {
+  console.log(product);
   cartItemCount.textContent = cart.length;
   let cartItemsTable = document.getElementById("cart-items");
   // cartItems.innerHTML = "";
+  // cartItemsTable.innerHTML = "";
   cartItemsTable.innerHTML = "";
   let totalCost = 0;
   for (let i = 0; i < cart.length; i++) {
     let item = cart[i];
 
+    console.log(item);
     let row = cartItemsTable.insertRow();
     let nameCell = row.insertCell(0);
     let priceCell = row.insertCell(1);

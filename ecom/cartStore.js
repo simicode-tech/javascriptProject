@@ -4,6 +4,11 @@ let cartItemsTable = document.getElementById("cart-items");
 productItem.addEventListener("click", add);
 let cart = [];
 
+/*
+-------------------
+addToCart
+-------------------
+*/
 function addToCart(product, quantity) {
   let item = {
     id: product.id,
@@ -19,9 +24,14 @@ function addToCart(product, quantity) {
   }
   localStorage.setItem("cartItems", JSON.stringify(cart));
   window.location.href = "cart.html";
-  updateCart();
+  updateCart(product);
 }
 
+/*
+-------------------
+add
+-------------------
+*/
 function add(e) {
   getAllProducts();
 

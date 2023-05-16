@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="filter-button" data-filter="all">All</button>
+    <button class="filter-button" data-filter="fruit">Fruit</button>
+    <button class="filter-button" data-filter="vegetable">Vegetable</button>
+
+    <ul>
+      <li class="filterable-item" data-filter="fruit">Apple</li>
+      <li class="filterable-item" data-filter="fruit">Banana</li>
+      <li class="filterable-item" data-filter="vegetable">Carrot</li>
+      <li class="filterable-item" data-filter="vegetable">Potato</li>
+    </ul>
+
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-button");
+      const filterableItems = document.querySelectorAll(".filterable-item");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filterValue = button.dataset.filter;
+          filterableItems.forEach((item) => {
+            if (item.dataset.filter === filterValue || filterValue === "all") {
+              item.classList.remove("hidden");
+            } else {
+              item.classList.add("hidden");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

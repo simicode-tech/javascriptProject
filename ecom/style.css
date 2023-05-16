@@ -28,8 +28,9 @@ body {
   font-weight: 800;
   color: rgb(61, 59, 59);
 }
-.about-card .card img {
+.about-card .card a img {
   height: 250px;
+  width: 80%;
   /* margin-bottom: 16px; */
   margin: 16px;
   border-radius: 10px 10px 0px 0px !important;
@@ -117,8 +118,13 @@ body {
 }
 
 .filter-box {
-  margin-left: 400px;
-  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* margin-left: 400px;
+  margin-bottom: 40px; */
 }
 .filter-box .active {
   background-color: var(--color-primary);
@@ -147,6 +153,7 @@ body {
   background-color: var(--color-sec);
   border: none;
   padding: 5px 20px;
+  margin: 10px;
   border-radius: 5px;
   color: #fff;
   font-size: 20px;
@@ -158,7 +165,11 @@ body {
   border: 1px solid var(--color-sec);
   transition: 0.5s;
 }
-
+.page button .active {
+  background-color: black;
+  color: var(--color-sec);
+  border: 1px solid var(--color-sec);
+}
 /* .top {
   position: fixed;
   bottom: 3rem;
@@ -191,4 +202,16 @@ body {
 }
 .table {
   width: 60% !important;
+}
+/* @media only screen and (max-width: 768px) {
+  For mobile phones:
+ 
+  .filter-box {
+    width: 100%;
+    margin: none;
+  }
+} */
+
+button.btn {
+  margin-left: 10px;
 }
